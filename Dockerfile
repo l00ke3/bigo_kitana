@@ -29,6 +29,7 @@ ENV HOME=/root \
     VNC_VIEW_ONLY=false
     
 ###########################################################################
+COPY xorg.conf /etc/X11/xorg.conf
 
 COPY ./payload/* "${STARTUPDIR}"/
 RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
