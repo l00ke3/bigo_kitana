@@ -48,7 +48,7 @@ RUN $STARTUPDIR/step_1.sh
 #RUN $STARTUPDIR/unroot.sh
 
 ###########################################################################
-#ADD ./etc/ /etc/
+ADD ./etc/ /etc/
 #RUN mkdir -p /home/pythony/.ssh
 #RUN rm /etc/ssh/sshd_config
 #RUN cp $STARTUPDIR/sshd_config /etc/ssh/
