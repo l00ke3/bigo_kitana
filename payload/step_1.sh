@@ -8,14 +8,14 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         cron python3-pil \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3-tk python3-dev  pwgen  \
-        wget openssh-server locate nano gedit screen  net-tools curl git tor \
-        xfce4-goodies xfce4 \
-        thunar tumbler xarchiver \
-        mugshot thunar-archive-plugin \
-        dbus-x11 xauth xinit x11-xserver-utils xdg-utils x11-apps xserver-xorg-video-dummy \
-        tightvncserver novnc python3-websockify python3-pyvirtualdisplay \
-        pwgen  \
-        xvfb xserver-xephyr ttf-wqy-zenhei python2.7 supervisor asciinema 
+        wget openssh-server locate nano gedit screen  net-tools curl git tor supervisor 
+        #xfce4-goodies xfce4 \
+        #thunar tumbler xarchiver \
+        #mugshot thunar-archive-plugin \
+        #dbus-x11 xauth xinit x11-xserver-utils xdg-utils x11-apps xserver-xorg-video-dummy \
+        #tightvncserver novnc python3-websockify python3-pyvirtualdisplay \
+        #pwgen  \
+        #xvfb xserver-xephyr ttf-wqy-zenhei python2.7 supervisor asciinema 
 #< /dev/null > /dev/null
 pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji  \
