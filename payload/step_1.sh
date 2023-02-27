@@ -37,5 +37,5 @@ mkdir -p /root/EXTRAT/
 
 
 echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
-#git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
+git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 df
