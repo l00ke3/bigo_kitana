@@ -1,6 +1,6 @@
 echo " * 2 ------------- > INSTALL S -- N -- M "
 DEBIAN_FRONTEND=noninteractive apt-get -f install  -y sudo
-DEBIAN_FRONTEND=noninteractive sudo  apt-get -f install  -y \
+DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         jq openssh-server htop wget build-essential apt-utils \
         nano \
         psmisc \
