@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "vanishxmainone" > /root/g00g
 File="/root/SDA_ALL/README.md"
 if [ -f "$File" ]; then  
 echo "$File exist"  
