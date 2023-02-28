@@ -21,6 +21,6 @@ while true
 do
 	echo "NEW ..............."
 	dbus-uuidgen > /var/lib/dbus/machine-id
-	cd /root/SDA_ALL/n_main_oct0pus_van/
+	cd /root/SDA_ALL/n_main_oct0pus/
 	python3 google_let.py
 done
