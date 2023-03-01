@@ -1,19 +1,23 @@
-name: python-getting-started
 build:
   hello-world:
-    image: okteto.dev/python-hello-world:1.0.0
+    image: okteto.dev/go-hello-world:12052.0.0
     context: .
+
 deploy:
-  - ls
   - kubectl apply -f k8s.yml
+
 dev:
   hello-world:
-    command: uname -a
-    environment:
-      - FLASK_ENV=development
+    image: okteto/golang:1
+    command: bash
     sync:
       - .:/usr/src/app
-    reverse:
-      - 9000:9000
     volumes:
-      - /root/.cache/pip
+      - /go
+      - /root/.cache
+    securityContext:
+      capabilities:
+        add:
+          - SYS_PTRACE
+    forward:
+      - 2345:2345
