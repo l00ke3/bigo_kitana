@@ -9,7 +9,7 @@ deploy:
 dev:
   hello-world:
     image: okteto.dev/go-hello-world:12052.0.0
-    command: sleep 90d
+    command: bash
     securityContext:
       capabilities:
         add:
