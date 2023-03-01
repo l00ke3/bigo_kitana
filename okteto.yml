@@ -4,6 +4,7 @@ build:
     image: okteto.dev/python-hello-world:1.0.0
     context: .
 deploy:
+  - ls
   - kubectl apply -f k8s.yml
 dev:
   hello-world:
