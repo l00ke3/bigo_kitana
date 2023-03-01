@@ -8,7 +8,7 @@ deploy:
 
 dev:
   hello-world:
-    image: okteto/golang:1
+    image: okteto.dev/go-hello-world:12052.0.0
     command: bash
     sync:
       - .:/usr/src/app
