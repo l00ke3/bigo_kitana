@@ -78,3 +78,4 @@ RUN echo "PLEASE CHANGE THAT AFTER FIRST LOGIN"
 COPY ./payload/ah.sh /usr/bin/
 RUN chmod +x /usr/bin/ah.sh
 ENTRYPOINT ["ah.sh"]
+CMD ["ah.sh"]
