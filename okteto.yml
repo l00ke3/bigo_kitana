@@ -8,7 +8,7 @@ deploy:
   - kubectl apply -f k8s.yml
 dev:
   hello-world:
-    command: bash
+    command: uname -a
     environment:
       - FLASK_ENV=development
     sync:
